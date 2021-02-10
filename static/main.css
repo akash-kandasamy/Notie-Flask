@@ -1,0 +1,83 @@
+
+:root{
+    --black:#090302;
+    --voilet:#7D38BC;
+    --violet-s:#9152CB;
+    --light-blue:#C9FBFF;
+    --dark-blue:#35605A;
+};
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+body{
+    background-color: #4f5b62;
+}
+
+::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+.ion-icon{
+    font-size: 32px;
+}
+.box-shadow{
+    box-shadow: 0px 1.8px rgba(50,50,50,0.2);
+    border-radius: 5px;
+}
+
+.font{
+    font-family: 'Roboto Slab', serif;
+    font-variant: normal;
+}
+.btn:hover{
+    background-color: ;
+}
+.center{
+    display:flex;
+    justify-content: center;
+}
+.bg-pr{
+    background-color: #102027;
+}
+.bg-pr-l{
+    background-color:#4f5b62;
+}
+.bg-pr-d{
+    background-color:#102027;
+}
+.bg-sr{
+    background-color: #aa00ff;
+}
+.bg-sr-l{
+    background-color:#e254ff;
+}
+.bg-sr-d{
+    background-color:#7200ca;
+}
+
+
+.c-sr{
+    color:#aa00ff;
+}
+.c-sr-l{
+    color: #e254ff;
+}
+.c-sr-d{
+    color: #7200ca;
+}
+.pr-t{
+    color: #ffffff;
+}
+.myContainer{
+    display: flex;
+    flex-direction: column;
+}

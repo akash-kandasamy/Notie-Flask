@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content%}
+<div class="container-fluid mb-3">
+    
+        <div class="container">
+            <div class="row overflow-auto w-100">
+                {% for block in all_blocks%}
+                <div class="col">
+                    <div class="card" style="width:18.1rem;margin-top:1rem;height: auto;">
+                        <div class="card-body ps-0 pe-0 py-2 align-items-center box-shadow bg-pr">
+                                <!-- top -->
+                                    <form method="POST" action='/addto/{{block.id}}'>
+                                    <div class="row align-items-center mx-auto">
+                                        <div class="col-4 ps-1 pe-0 ms-1 me-0 w-auto">
+                                            <input type="text" class=" bg-pr-l box-shadow font fs-s pe-0 ps-2 py-1 my-0 border pr-t" placeholder="Type here !2do, !rem, !note" name="content" id="content">
+                                        </div>
+                                        <div class="col-1 align-items-center ps-1 pe-0 ms-1 me-0 py-1">
+                                            <a class="bg-sr border w-10 h-20 box-shadow py-1 px-3" type="submit" href="/addto/{{block.id}}"><ion-icon name="add-outline" ></ion-icon></a>
+                                        </div>
+                                    </div>
+                                    </form>
+                                <!-- do not disturb this -->
+            
+                                    <div class="row align-items-center w-auto border me-2 ms-2 my-2 box-shadow bg-pr-d" >
+                                        <div class="col-9 px-2 py-1 align-items-center ">
+                                            <input class="bg-sr" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label pr-t px-1" for="flexCheckChecked">
+                                            Checked checkbox
+                                            </label>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center w-auto border me-2 ms-2 my-2 box-shadow bg-pr-d">
+                                        <div class="col-9 px-2 py-1">
+                                            <form>
+                                                <input class="bg-sr" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label pr-t" for="flexCheckChecked">
+                                                Checked checkbox
+                                                </label>
+                                            </form>
+                                        
+                                        </div>
+                                    </div>  
+                        </div>
+            
+            
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+      
+
+    
+</div>
+{% endblock %}
